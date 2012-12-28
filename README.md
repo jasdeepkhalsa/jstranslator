@@ -9,6 +9,10 @@ Whilst reading JavaScript, in my mind I am constantly translating the code into 
 ### How It Works ###
 The script uses regular expressions to count, find and replace code. Simples.
 
+Existing comments are preserved.
+
+Here is a (very) basic `input` and `output`:
+
 #### Input (sample.js) ####
 	var boolean = true;
 	var string = "string";
@@ -31,7 +35,7 @@ The script uses regular expressions to count, find and replace code. Simples.
 	
 	if (boolean === true) {
 		console.log(true);
-	} else if (boolean === false) {
+	} else if (boolean == false) {
 		console.log(false);
 	} else {
 		console.log("else");
@@ -72,7 +76,7 @@ The script uses regular expressions to count, find and replace code. Simples.
 	
 	if the following condition is true:  (true or false (boolean) #is absolutely equal to# true) {
 		log in the console: (true); 
-	} otherwise if the following condition is true:  (true or false (boolean) #is absolutely equal to# false) {
+	} otherwise if the following condition is true:  (true or false (boolean) #is equal to# false) {
 		log in the console: (false); 
 	} otherwise {
 		log in the console: ("otherwise"); 

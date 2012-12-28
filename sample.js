@@ -19,7 +19,7 @@ var object = {
 
 if (boolean === true) {
 	console.log(true);
-} else if (boolean === false) {
+} else if (boolean == false) {
 	console.log(false);
 } else {
 	console.log("else");
