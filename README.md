@@ -1,10 +1,18 @@
 ## jTranslator - JavaScript Translator ##
 A JavaScript to Human-Readable-English translator.
 
-Take any JavaScript file and put it through jtranslator.js to understand how the code works in plain English.
+Take any JavaScript file and put it through `jtranslator.js` to understand how the code works in plain English.
 
 ### Problem Definition ###
-Whilst reading JavaScript, in my mind I am constantly translating the code into human english, so I decided in true programmer-lazy fashion to write a script to do this "translating" for me automatically. It will also probably help those new to JavaScript to help understand the language better.  
+Whilst reading JavaScript, in my mind I am constantly translating the code into human english, so I decided in true programmer-lazy fashion to write a script to do this "translating" for me automatically.
+
+It will also probably help those new to JavaScript to help understand the language better.
+
+Further, I realized something very interesting...
+
+...Unlike human-to-human translations, machine-to-human translations can be much more accurate because the rules of programming exist under a set of strict conditions and parameters.
+
+Therefore, machine-to-human translation engines have the opportunity to really become extremely accurate and useful, especially in helping us understand more complex programs and undocumented code.
 
 ### How It Works ###
 The script uses regular expressions to count, find and replace code. Simples.
@@ -96,9 +104,10 @@ Here is a (very) basic `input` and `output`:
 	}
 
 ### To Do ###
-* Use [esprima.js](http://esprima.org/) for wider code coverage and more accurate translations
-* Add in support for multiple, custom translations
-* Use popular libraries such as `jQuery`, `Backbone.js` to use as a litmus test
+* Switch to using [esprima.js](http://esprima.org/) for wider code coverage and more accurate translations
+* Add in support for more complex coding scenarios e.g. prototypal inheritance, anonymous functions, asyncronous functions, callbacks etc.
+* Add in support for plugging in multiple, custom translations (e.g. JavaScript to US English, JavaScript to French - cool idea huh?)
+* Use popular libraries such as `jQuery`, `Backbone.js` as a litmus test
 
 ### Author & Version ###
 v0.0.1 (pre-Alpha) by Jasdeep Khalsa. Not for production use.
