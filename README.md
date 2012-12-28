@@ -105,7 +105,7 @@ Here is a (very) basic `input` and `output`:
 
 ### To Do ###
 * Switch to using [esprima.js](http://esprima.org/) for wider code coverage and more accurate translations
-* Add in support for more complex coding scenarios e.g. prototypal inheritance, anonymous functions, asyncronous functions, callbacks etc.
+* Add in support for more complex coding scenarios e.g. prototypal inheritance, anonymous functions, asynchronous functions, callbacks etc.
 * Add in support for plugging in multiple, custom translations (e.g. JavaScript to US English, JavaScript to French - cool idea huh?)
 * Use popular libraries such as `jQuery`, `Backbone.js` as a litmus test
 
