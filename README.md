@@ -9,7 +9,7 @@ Whilst reading JavaScript, in my mind I am constantly translating the code into 
 ### How It Works ###
 The script uses regular expressions to count, find and replace code. Simples.
 
-#### Input ####
+#### Input (sample.js) ####
 	var boolean = true;
 	var string = "string";
 	var number = 1;
@@ -19,6 +19,35 @@ The script uses regular expressions to count, find and replace code. Simples.
 	function func(number) {
 		var result = number + 1;
 		return result;
+	}
+	
+	// comment
+	
+	var object = {
+		1 : 1,
+		2 : {0:0, '0':{'key':'value'}},
+		"3" : "3"
+	};
+	
+	if (boolean === true) {
+		console.log(true);
+	} else if (boolean === false) {
+		console.log(false);
+	} else {
+		console.log("else");
+	}
+	
+	for (key in object) {
+		for (value in object[key]) {
+			console.log(value);
+			console.log(object[key]);
+		}
+	}
+	
+	/* block comment */
+	
+	for(var i = 0;i<list.length;i++){
+		console.log(list[i]);
 	}
 
 #### Output ####
@@ -31,6 +60,35 @@ The script uses regular expressions to count, find and replace code. Simples.
 	create the function func(number) {
 		variable result #equals# number + 1; 
 		and outputs result; 
+	}
+	
+	// comment
+	
+	variable object #equals# {
+		1 : 1,
+		2 : {0:0, '0':{'key':'value'}},
+		"3" : "3"
+	}; 
+	
+	if the following condition is true:  (true or false (boolean) #is absolutely equal to# true) {
+		log in the console: (true); 
+	} otherwise if the following condition is true:  (true or false (boolean) #is absolutely equal to# false) {
+		log in the console: (false); 
+	} otherwise {
+		log in the console: ("otherwise"); 
+	}
+	
+	for (key inside object) {
+		for (value inside object[key]) {
+			log in the console: (value); 
+			log in the console: (object[key]); 
+		}
+	}
+	
+	/* block comment */
+	
+	for(variable i #equals# 0; i#is less than#list.length; i#increase by one#){
+		log in the console: (list[i]); 
 	}
 
 ### To Do ###
