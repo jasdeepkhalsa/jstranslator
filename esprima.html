@@ -1,30 +1,37 @@
 <html>
 	<head>
-	<title>Esprima Code Analysis</title>
-	<script type="text/javascript" src="//raw.github.com/ariya/esprima/master/esprima.js"></script>
+		<title>Esprima Code Analysis</title>
+		<script type="text/javascript" src="//raw.github.com/ariya/esprima/master/esprima.js"></script>
 	</head>
 	<body>
-	<h1>Esprima.js Simple Parser</h1>
-	<p>Paste in your JavaScript code into the textarea and click the button <i>Parse</i> to see the output of Esprima.js in the console (F12)</p>
-	<p><i>Translate with jTranslator</i> is a work in progress and currently disabled</p>
-	<textarea placeholder="Paste your code here..." id="code" autofocus="autofocus" cols="70" rows="15" spellcheck="false"></textarea><br/>
-	<button type="submit" id="translate">Parse</button>
-	<button disabled="true" id="">Translate with jTranslator</button>
-	<script>
-	var code, parse, textarea, options;
-	var options = {
-	    comment: true,
-	    raw: false,
-	    range: false,
-	    loc: false,
-	    tolerant: true
-    };
-	textarea = document.getElementById("code");
-	translate = document.getElementById("translate");
-	translate.addEventListener('click',function(){
-		parse = esprima.parse(textarea.value, options);
-		console.log(parse.body);
-	},false);
-	</script>
+		<h1>Esprima.js Simple Parser</h1>
+		<p>
+			Paste in your JavaScript code into the textarea and click the button <i>Parse</i> to see the output of Esprima.js in the console (F12)
+		</p>
+		<p>
+			<i>Translate with jsTranslator</i> is a work in progress and currently disabled
+		</p>
+		<textarea placeholder="Paste your code here..." id="code" autofocus="autofocus" cols="70" rows="15" spellcheck="false"></textarea><br/>		<button type="submit" id="translate">
+			Parse
+		</button>
+		<button disabled="true" id="">
+			Translate with jTranslator
+		</button>
+		<script>
+			var code, parse, textarea, options;
+			var options = {
+				comment : true,
+				raw : false,
+				range : false,
+				loc : false,
+				tolerant : true
+			};
+			textarea = document.getElementById("code");
+			translate = document.getElementById("translate");
+			translate.addEventListener('click', function() {
+				parse = esprima.parse(textarea.value, options);
+				console.log(parse.body);
+			}, false);
+		</script>
 	</body>
 </html>
