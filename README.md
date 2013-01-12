@@ -1,5 +1,5 @@
 ## jstranslator - JavaScript Translator ##
-A JavaScript to Human-Readable-English translator.
+A JavaScript to Human-English translator.
 
 Take any JavaScript file and put it through `jstranslator.js` to understand how the code works in plain English.
 
