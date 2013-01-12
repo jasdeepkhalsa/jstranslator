@@ -1,7 +1,7 @@
-## jTranslator - JavaScript Translator ##
+## jstranslator - JavaScript Translator ##
 A JavaScript to Human-Readable-English translator.
 
-Take any JavaScript file and put it through `jtranslator.js` to understand how the code works in plain English.
+Take any JavaScript file and put it through `jstranslator.js` to understand how the code works in plain English.
 
 ### Problem Definition ###
 Whilst reading JavaScript, in my mind I am constantly translating the code into human english, so I decided in true programmer-lazy fashion to write a script to do this "translating" for me automatically.
